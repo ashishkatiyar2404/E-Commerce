@@ -1,0 +1,149 @@
+header {
+  /* background-color: pink; */
+  background-image: linear-gradient(
+    45deg,
+    rgb(133, 255, 189, 0.4) 50%,
+    rgb(255, 251, 125, 0.4) 50%
+  );
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+}
+
+.prod__search {
+  background-color: rgb(250, 250, 250);
+  width: 45%;
+  border-radius: 2rem;
+}
+
+.prod__search input {
+  width: 95%;
+  height: 3rem;
+  vertical-align: middle;
+  border: 0;
+}
+
+.prod__search i {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+::placeholder {
+  font-size: 1.6rem;
+  margin: 2rem;
+}
+
+.user__info-links ul {
+  display: flex;
+  justify-content: center;
+}
+
+.user__info-links ul > li {
+  margin: 0 1rem;
+  padding: 0 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.login {
+  background-color: antiquewhite;
+  padding: 0.5rem 1rem;
+  color: black;
+}
+
+.num {
+  position: relative;
+  font-size: 2.4rem;
+  color: gray;
+}
+
+.num span {
+  position: absolute;
+  top: -30%;
+  right: -30%;
+  font-size: 1.6rem;
+  background-color: rgb(133, 255, 189, 1);
+  color: rgb(0, 0, 0, 0.7);
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* SECTION 1 */
+.main__section {
+  background-image: linear-gradient(
+      45deg,
+      rgb(133, 255, 189, 0.3) 50%,
+      rgb(255, 251, 125, 0.3) 50%
+    ),
+    url("/assets/images/Indoors1.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+
+.heading__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.heading__primary {
+  color: rgb(68, 68, 68);
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  /* margin-bottom: 1rem; */
+}
+
+.heading__primary-main {
+  display: block;
+  letter-spacing: 2.5rem;
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.heading__primary-sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+}
+
+.btn__white {
+  background-color: #fff;
+  color: #777;
+  margin: 1.6rem;
+}
+
+.btn__white {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+
+  position: relative;
+  font-size: 1.6rem;
+}
+
+/* MAIN */
+.new__arrival {
+  height: 70vh;
+  background-color: gray;
+}
+
+/* recommend__section */
+.recommend__main {
+  height: 70vh;
+  background-color: antiquewhite;
+}
