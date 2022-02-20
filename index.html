@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="login.css" /> -->
     <script
       src="https://kit.fontawesome.com/743732d519.js"
       crossorigin="anonymous"
@@ -27,10 +25,11 @@
         </div>
         <div class="nav__item user__info-links">
           <ul>
-            <li><a href="#" class="login">Login</a></li>
+            <li>
+              <a href="/authentication/login.html" class="login">Login</a>
+            </li>
             <li>
               <i class="fa-solid fa-heart num"><span>3</span></i>
-              <!-- <i class="fa-solid fa-heart"></i> -->
             </li>
             <li>
               <i class="fa-solid fa-cart-arrow-down num">
@@ -47,10 +46,11 @@
     <section class="main__section">
       <div class="heading__text-box">
         <h1 class="heading__primary">
-          <span class="heading__primary-main">Welcome to Music Stores! </span>
-          <span class="heading__primary-sub"
-            >At our guitar store you'll be able to search for huge range of
-            guitar's. We have the eminent guitar at lowest prices in India.
+          <span class="heading__primary-main">Welcome to Music Store! </span>
+          <span class="heading__primary-sub">
+            <!-- At our guitar store you'll be able to search for huge range of
+            guitar's.  -->
+            We have the eminent instruments at lowest prices in India.
           </span>
         </h1>
         <a href="#" class="btn btn__white">Shop Now</a>
@@ -59,18 +59,73 @@
     <!-- SECTION 1 ENDS -->
 
     <!-- SECTION 2 -->
-    <section class="new__arrival-section">
-      <main class="new__arrival">
-        <div>New Arrivals</div>
-      </main>
+    <section class="featured__section">
+      <div class="featured__heading-container heading__container">
+        <span class="featured__heading heading__center"
+          >FEATURED CATEGORIES</span
+        >
+      </div>
+      <div class="featured__items-container">
+        <div class="featured__guitar">
+          <img src="/assets/images/featured__guitar1.jpg" alt="Guitars" />
+          <span class="featured__item-name guitar">Guitars</span>
+        </div>
+        <div class="featured__piano">
+          <img src="/assets/images/featured__piano.jpg" alt="Pianos" />
+          <span class="featured__item-name piano">Pianos</span>
+        </div>
+        <div class="featured__drum">
+          <img src="/assets/images/featured__drum.jpg" alt="Drums" />
+          <span class="featured__item-name drum">Drums</span>
+        </div>
+        <div class="featured__xylo">
+          <img src="/assets/images/featured__xylo.jpg" alt="Xylophones" />
+          <span class="featured__item-name xylo">Xylophones</span>
+        </div>
+      </div>
     </section>
+    <hr />
     <!-- SECTION 2 ENDS -->
 
     <!-- SECTION 3 -->
-    <section class="recommend__section">
-      <main class="recommend__main">
-        <div>Top Brand Recoomend for you</div>
-      </main>
+    <section class="new__arrival-section">
+      <div class="featured__heading-container heading__container">
+        <span class="featured__heading heading__center">WHAT'S NEW</span>
+      </div>
+      <div class="new__items-container">
+        <div class="new__brand">
+          <div>
+            <img src="/assets/images/new_brand1.jpg" alt="guitar" />
+            <span class="new">NEW</span>
+          </div>
+          <span>AK-101 Dreadnought</span>
+        </div>
+        <div class="new__brand">
+          <div>
+            <img src="/assets/images/new_brand2.jpg" alt="guitar" />
+            <span class="new">NEW</span>
+          </div>
+          <span>AK-10BAS Dreadnought</span>
+        </div>
+        <div class="new__brand">
+          <div>
+            <img src="/assets/images/new_brand3.jpg" alt="guitar" />
+            <span class="new">NEW</span>
+          </div>
+          <span>AK-101PP Parlor</span>
+        </div>
+        <div class="new__brand">
+          <div>
+            <img
+              class="guitar__image"
+              src="/assets/images/new_brand4.jpg"
+              alt="guitar"
+            />
+            <span class="new">NEW</span>
+          </div>
+          <span>60th Anniversary Jaguar</span>
+        </div>
+      </div>
     </section>
     <!-- SECTION 3 ENDS -->
   </body>
