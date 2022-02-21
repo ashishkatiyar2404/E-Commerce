@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/library/Components/cart/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://u-eye-kit.netlify.app//Components/documentation.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/743732d519.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>E-Commerce</title>
+  </head>
+  <body>
+    <!-- NAV BAR START -->
+    <header>
+      <nav class="navbar">
+        <h1 class="nav__item company__logo">wave<strong>Deal</strong></h1>
+        <div class="nav__item prod__search">
+          <input type="search" name="search" placeholder="Search" />
+        </div>
+        <div class="nav__item user__info-links">
+          <ul>
+            <li>
+              <a href="/authentication/login.html" class="login">Login</a>
+            </li>
+            <li>
+              <a href="/library/Components/wishlist/wishlist.html"
+                ><i class="fa-solid fa-heart num"><span>3</span></i></a
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-cart-arrow-down num">
+                <span>3</span>
+              </i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- NAV BAR END -->
+
+    <!-- CART SECTION START -->
+    <section class="section">
+      <div class="card__quantity">
+        <div class="heading__container">
+          <span class="heading__cart">My Cart</span>
+        </div>
+        <div class="grid img__horizontal">
+          <img
+            src="/assets/images/wishlist_guitar1.jpg"
+            alt="Horizontal Image"
+          />
+          <div class="grid">
+            <div class="info">
+              <h1>ELECTRIC GUITAR FOR KID</h1>
+              <span>Short 30“ scale length</span><br />
+              <span>FINGERBOARD MATERIAL</span>
+              <div class="img__rating-price">
+                <span class="rating"
+                  >&nbsp 4.9 <i class="fas fa-star"></i
+                ></span>
+                <p>
+                  ₹1,999 <span class="line__through">₹2,200</span>
+                  <span class="discount">13% off</span>
+                </p>
+              </div>
+              <div class="quantity__container">
+                <label for="">Quantity :- </label>
+                <select name="quantity" id="quantity">
+                  <option value="1" selected="">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="9">10</option>
+                </select>
+              </div>
+              <div class="big__buttons card__link">
+                <a class="remove2cart" href="#">Remove From Cart</a>
+                <a class="move__wishlist" href="#">Move To Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--   CHECKOUT START -->
+      <div class="checkout__container">
+        <span>PRICE DETAILS</span>
+        <div class="flex">
+          <span>PRICE</span>
+          <span>₹2,200</span>
+        </div>
+        <div class="flex">
+          <span>DISCOUNT</span>
+          <span>-₹201</span>
+        </div>
+        <div class="flex">
+          <span>DELIVERY CHARGES</span>
+          <span>₹400</span>
+        </div>
+        <div class="flex">
+          <span>TOTAL AMOUNT</span>
+          <span>₹2399</span>
+        </div>
+        <div class="place__order">
+          <span>You will save ₹201 on this order</span>
+          <button>PLACE ORDER</button>
+        </div>
+      </div>
+      <!--   CHECKOUT ENDS -->
+    </section>
+    <!-- CART SECTION END-->
+  </body>
+</html>
