@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/library/Components/wishlist/wishlist.css" />
+    <script
+      src="https://kit.fontawesome.com/743732d519.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>E-Commerce</title>
+  </head>
+  <body>
+    <!-- NAV BAR START -->
+    <header>
+      <nav class="navbar">
+        <h1 class="nav__item company__logo">wave<strong>Deal</strong></h1>
+        <div class="nav__item prod__search">
+          <input type="search" name="search" placeholder="Search" /><i
+            class="fa-solid fa-magnifying-glass"
+          ></i>
+        </div>
+        <div class="nav__item user__info-links">
+          <ul>
+            <li>
+              <a href="/authentication/login.html" class="login">Login</a>
+            </li>
+            <li>
+              <a href="/library/Components/wishlist/wishlist.html"
+                ><i class="fa-solid fa-heart num"><span>3</span></i></a
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-cart-arrow-down num">
+                <span>3</span>
+              </i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- NAV BAR END -->
+
+    <!-- WISHLIST SECTION START -->
+    <section>
+      <div class="heading__container">
+        <span class="heading__wishlist">My wishlist</span>
+      </div>
+      <div class="wishlist__container">
+        <div class="wishlist__item">
+          <img src="/assets/images/wishlist_guitar1.jpg" alt="piano" />
+          <i class="fa-solid fa-heart"></i>
+          <span>Mini Jazzmaster Piano</span>
+          <span>₹1999</span>
+          <button class="btn__move2cart">Move to cart</button>
+        </div>
+        <div class="wishlist__item">
+          <img src="/assets/images/wishlist_guitar1.jpg" alt="guitar" />
+          <i class="fa-solid fa-heart"></i>
+          <span>Mini Jazzmaster Guitar</span>
+          <span>₹2199</span>
+          <button class="btn__move2cart">Move to cart</button>
+        </div>
+        <div class="wishlist__item">
+          <img src="/assets/images/wishlist_guitar1.jpg" alt="piano" />
+          <i class="fa-solid fa-heart"></i>
+          <span>Mini Jazzmaster Drum</span>
+          <span>₹1299</span>
+          <button class="btn__move2cart">Move to cart</button>
+        </div>
+        <div class="wishlist__item">
+          <img src="/assets/images/wishlist_guitar1.jpg" alt="Xylophones" />
+          <i class="fa-solid fa-heart"></i>
+          <span>Mini Jazzmaster Xylophones</span>
+          <span>₹1099</span>
+          <button class="btn__move2cart">Move to cart</button>
+        </div>
+      </div>
+    </section>
+    <!-- WISHLIST SECTION END-->
+  </body>
+</html>
