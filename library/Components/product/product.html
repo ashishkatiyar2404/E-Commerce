@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/library/Components/product/product.css" />
+    <script
+      src="https://kit.fontawesome.com/743732d519.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>E-Commerce</title>
+  </head>
+
+  <body>
+    <!-- Nav bar -->
+    <header>
+      <nav class="navbar">
+        <h1 class="nav__item company__logo">wave<strong>Deal</strong></h1>
+        <div class="nav__item prod__search">
+          <input type="search" name="search" placeholder="Search" /><i
+            class="fa-solid fa-magnifying-glass"
+          ></i>
+        </div>
+        <div class="nav__item user__info-links">
+          <ul>
+            <li>
+              <a href="/authentication/login.html" class="login">Login</a>
+            </li>
+            <li>
+              <a href="/library/Components/wishlist/wishlist.html"
+                ><i class="fa-solid fa-heart num"><span>3</span></i></a
+              >
+            </li>
+            <li>
+              <a href="/library/Components/cart/cart.html"
+                ><i class="fa-solid fa-cart-arrow-down num">
+                  <span>3</span>
+                </i></a
+              >
+            </li>
+            <li>
+              <a href="/authentication/login.html" class="logout">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Nav bar end -->
+
+    <!-- PRODUCT SECTION START -->
+    <section class="product__page">
+      <main class="filter">
+        <div class="clear">
+          <span>Filters</span>
+          <span>Clear</span>
+        </div>
+        <div>
+          <span class="price__slider">Price</span>
+          <div class="slider__container">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="33.33"
+              step="33"
+              class="slider"
+            />
+          </div>
+          <div class="slider__range">
+            <span> &#60;10k</span>
+            <span> &#62;10k</span>
+            <span> &#62;20k</span>
+            <span> &#62;50k</span>
+          </div>
+        </div>
+        <div class="category">
+          <span>Category</span>
+          <div>
+            <input type="checkbox" class="guitar" />
+            <label for="guitar">Guitars</label>
+          </div>
+          <div>
+            <input type="checkbox" class="drum" />
+            <label for="drum">Drums</label>
+          </div>
+          <div>
+            <input type="checkbox" class="piano" />
+            <label for="piano">Pianos</label>
+          </div>
+        </div>
+        <div class="product__rating">
+          <span>Rating</span>
+          <div>
+            <input type="radio" class="four" name="agree" />
+            <label for="four">4 stars & above</label>
+          </div>
+          <div>
+            <input type="radio" class="three" name="agree" />
+            <label for="three">3 stars & above</label>
+          </div>
+          <div>
+            <input type="radio" class="two" name="agree" />
+            <label for="two">2 stars & above</label>
+          </div>
+        </div>
+        <div class="product__sorting">
+          <span>Sort By</span>
+          <div>
+            <input type="radio" class="low" name="agree" />
+            <label for="three">Price - low to high</label>
+          </div>
+          <div>
+            <input type="radio" class="high" name="agree" />
+            <label for="three">Price - high to low</label>
+          </div>
+        </div>
+      </main>
+      <!-- list of all products -->
+      <main class="filtered__products">
+        <div class="product__card">
+          <div class="product__card-img-container">
+            <img src="/assets/images/product__guitar.jpg" alt="Guitar" />
+          </div>
+          <div class="product__info-container">
+            <div class="product__info">
+              <span class="product__name">Guitar</span>
+              <span class="product__add-wishlist"
+                ><i class="far fa-bookmark"></i
+              ></span>
+            </div>
+            <div class="product__info-more">
+              <span class="product__verified-name"
+                >Cort CR230 acoustic Guitar </span
+              ><br />
+              <span class="product__rating-star"
+                >&nbsp 3.5 <i class="fas fa-star"></i
+              ></span>
+              <span class="product__discount">13% off</span>
+              <p>₹11,678 <span class="product__old-price">₹12,999</span></p>
+            </div>
+            <div class="product__btn">
+              <a href="/library/Components/cart/cart.html">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="product__card">
+          <div class="product__card-img-container">
+            <img src="/assets/images/product__guitar.jpg" alt="Guitar" />
+          </div>
+          <div class="product__info-container">
+            <div class="product__info">
+              <span class="product__name">Guitar</span>
+              <span class="product__add-wishlist"
+                ><i class="far fa-bookmark"></i
+              ></span>
+            </div>
+            <div class="product__info-more">
+              <span class="product__verified-name"
+                >Cort CR230 acoustic Guitar </span
+              ><br />
+              <span class="product__rating-star"
+                >&nbsp 3.5 <i class="fas fa-star"></i
+              ></span>
+              <span class="product__discount">13% off</span>
+              <p>₹11,678 <span class="product__old-price">₹12,999</span></p>
+            </div>
+            <div class="product__btn">
+              <a href="/library/Components/cart/cart.html">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="product__card">
+          <div class="product__card-img-container">
+            <img src="/assets/images/product__guitar.jpg" alt="Guitar" />
+          </div>
+          <div class="product__info-container">
+            <div class="product__info">
+              <span class="product__name">Guitar</span>
+              <span class="product__add-wishlist"
+                ><i class="far fa-bookmark"></i
+              ></span>
+            </div>
+            <div class="product__info-more">
+              <span class="product__verified-name"
+                >Cort CR230 acoustic Guitar </span
+              ><br />
+              <span class="product__rating-star"
+                >&nbsp 3.5 <i class="fas fa-star"></i
+              ></span>
+              <span class="product__discount">13% off</span>
+              <p>₹11,678 <span class="product__old-price">₹12,999</span></p>
+            </div>
+            <div class="product__btn">
+              <a href="/library/Components/cart/cart.html">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="product__card">
+          <div class="product__card-img-container">
+            <img src="/assets/images/product__guitar.jpg" alt="Guitar" />
+          </div>
+          <div class="product__info-container">
+            <div class="product__info">
+              <span class="product__name">Guitar</span>
+              <span class="product__add-wishlist"
+                ><i class="far fa-bookmark"></i
+              ></span>
+            </div>
+            <div class="product__info-more">
+              <span class="product__verified-name"
+                >Cort CR230 acoustic Guitar </span
+              ><br />
+              <span class="product__rating-star"
+                >&nbsp 3.5 <i class="fas fa-star"></i
+              ></span>
+              <span class="product__discount">13% off</span>
+              <p>₹11,678 <span class="product__old-price">₹12,999</span></p>
+            </div>
+            <div class="product__btn">
+              <a href="/library/Components/cart/cart.html">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="product__card">
+          <div class="product__card-img-container">
+            <img src="/assets/images/product__guitar.jpg" alt="Guitar" />
+          </div>
+          <div class="product__info-container">
+            <div class="product__info">
+              <span class="product__name">Guitar</span>
+              <span class="product__add-wishlist"
+                ><i class="far fa-bookmark"></i
+              ></span>
+            </div>
+            <div class="product__info-more">
+              <span class="product__verified-name"
+                >Cort CR230 acoustic Guitar </span
+              ><br />
+              <span class="product__rating-star"
+                >&nbsp 3.5 <i class="fas fa-star"></i
+              ></span>
+              <span class="product__discount">13% off</span>
+              <p>₹11,678 <span class="product__old-price">₹12,999</span></p>
+            </div>
+            <div class="product__btn">
+              <a href="/library/Components/cart/cart.html">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="product__card">
+          <div class="product__card-img-container">
+            <img src="/assets/images/product__guitar.jpg" alt="Guitar" />
+          </div>
+          <div class="product__info-container">
+            <div class="product__info">
+              <span class="product__name">Guitar</span>
+              <span class="product__add-wishlist"
+                ><i class="far fa-bookmark"></i
+              ></span>
+            </div>
+            <div class="product__info-more">
+              <span class="product__verified-name"
+                >Cort CR230 acoustic Guitar </span
+              ><br />
+              <span class="product__rating-star"
+                >&nbsp 3.5 <i class="fas fa-star"></i
+              ></span>
+              <span class="product__discount">13% off</span>
+              <p>₹11,678 <span class="product__old-price">₹12,999</span></p>
+            </div>
+            <div class="product__btn">
+              <a href="/library/Components/cart/cart.html">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="product__card">
+          <div class="product__card-img-container">
+            <img src="/assets/images/product__guitar.jpg" alt="Guitar" />
+          </div>
+          <div class="product__info-container">
+            <div class="product__info">
+              <span class="product__name">Guitar</span>
+              <span class="product__add-wishlist"
+                ><i class="far fa-bookmark"></i
+              ></span>
+            </div>
+            <div class="product__info-more">
+              <span class="product__verified-name"
+                >Cort CR230 acoustic Guitar </span
+              ><br />
+              <span class="product__rating-star"
+                >&nbsp 3.5 <i class="fas fa-star"></i
+              ></span>
+              <span class="product__discount">13% off</span>
+              <p>₹11,678 <span class="product__old-price">₹12,999</span></p>
+            </div>
+            <div class="product__btn">
+              <a href="/library/Components/cart/cart.html">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="product__card">
+          <div class="product__card-img-container">
+            <img src="/assets/images/product__guitar.jpg" alt="Guitar" />
+          </div>
+          <div class="product__info-container">
+            <div class="product__info">
+              <span class="product__name">Guitar</span>
+              <span class="product__add-wishlist"
+                ><i class="far fa-bookmark"></i
+              ></span>
+            </div>
+            <div class="product__info-more">
+              <span class="product__verified-name"
+                >Cort CR230 acoustic Guitar </span
+              ><br />
+              <span class="product__rating-star"
+                >&nbsp 3.5 <i class="fas fa-star"></i
+              ></span>
+              <span class="product__discount">13% off</span>
+              <p>₹11,678 <span class="product__old-price">₹12,999</span></p>
+            </div>
+            <div class="product__btn">
+              <a href="/library/Components/cart/cart.html">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- PRODUCT SECTION END -->
+  </body>
+</html>

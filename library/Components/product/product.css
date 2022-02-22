@@ -1,0 +1,124 @@
+:root {
+  --color-gradient-green: rgb(133, 255, 189, 0.5);
+  --color-gradient-yellow: rgb(255, 251, 125, 0.5);
+  --color-rating-star: rgb(218, 165, 32);
+  --color-discount: rgb(0, 128, 0);
+  --color-product-name: rgb(46, 45, 45);
+  --color-gray: rgb(128, 128, 128);
+  --color-products-bg: rgb(245, 245, 220, 0.5);
+}
+
+/* FILTER */
+.product__page {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  margin-top: 1rem;
+}
+
+.filter {
+  padding: 0 2rem;
+}
+.filter div > span {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.clear {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.clear span {
+  cursor: pointer;
+}
+
+.slider,
+.slider__container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  cursor: pointer;
+}
+
+.slider__range {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.slider__range > span {
+  margin-right: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.category,
+.product__rating,
+.product__sorting {
+  margin-bottom: 3rem;
+}
+
+.category div > input,
+.product__rating div > input,
+.product__sorting div > input {
+  cursor: pointer;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
+.category div > * {
+  font-size: 1.6rem;
+}
+
+/* FILTERED PRODUCTS */
+.filtered__products {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-products-bg);
+}
+.product__card {
+  width: 20%;
+  margin: 2rem 2rem;
+}
+
+.product__card-img-container img {
+  width: 100%;
+  cursor: pointer;
+}
+.product__info-container {
+  margin: 0.5rem;
+}
+.product__verified-name {
+  color: var(--color-gray);
+}
+.product__add-wishlist i,
+.product__name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-product-name);
+  cursor: pointer;
+}
+.product__rating-star {
+  background-color: var(--color-gradient-green);
+  border-radius: 2px;
+}
+.product__rating-star i {
+  color: var(--color-rating-star);
+}
+.product__discount {
+  color: var(--color-discount);
+}
+.product__btn {
+  text-align: center;
+  margin: 1rem 0rem;
+  padding: 1rem;
+  background-color: var(--color-gradient-green);
+  background-image: linear-gradient(
+    45deg,
+    var(--color-gradient-green) 0%,
+    var(--color-gradient-yellow) 100%
+  );
+}
+
+.product__info {
+  display: flex;
+  justify-content: space-between;
+}
